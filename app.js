@@ -32,7 +32,7 @@ app.use((req, res, next) => {
 
 /****** Routes *****/
 //Fanger alle spørgsmål
-app.get(`/question`, (req, res) => {
+app.get(`/question/${process.env.API_KEY}`, (req, res) => {
     Question.find()
     .exec()
     .then(result => {
