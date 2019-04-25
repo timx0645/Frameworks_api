@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const app = express();
 require('dotenv').config();
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://timx0645:'+ process.env.PSW +'@cluster0-081uj.azure.mongodb.net/mandatory?retryWrites=true');
+mongoose.connect('mongodb+srv://timx0645:rxn58fuh@cluster0-081uj.azure.mongodb.net/mandatory?retryWrites=true');
 const Question = require('./models/question');
 const Comment = require('./models/comment');
 const Profil = require('./models/profil');
